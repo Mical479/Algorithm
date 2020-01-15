@@ -24,6 +24,8 @@ public class LeetCode3 {
             int length = 0; //要求最长子串，将窗口定义为最小的值
             int l = 0, r = -1; //滑动窗口为 chars[l...r] 区间
 
+            //右指针滑动：当频率为0，即下个值没重复的情况下
+            //左指针滑动：有重复值时，不断滑动，至重复值被移除区间
             while (l < chars.length){ //必须左区间移动到最右边才能结束循环
                 if (r + 1 < chars.length && freq[chars[r + 1]] == 0){ //这里注意判断条件不能变换，应该先判断 r+1
                     r ++;
