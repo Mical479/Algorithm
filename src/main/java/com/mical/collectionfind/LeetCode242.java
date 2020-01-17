@@ -49,7 +49,7 @@ public class LeetCode242 {
             //再判断s的字母频率
             for (char c : s.toCharArray()) {
                 Integer integer = map.get(c);
-                if (integer == null || integer < 0)
+                if (integer == null || integer <= 0)
                     return false;
                 map.put(c, integer - 1);
             }
@@ -60,7 +60,7 @@ public class LeetCode242 {
     @Test
     public void test() {
         Solution solution = new Solution();
-        boolean anagram = solution.isAnagram1("aacc", "ccac");
+        boolean anagram = solution.isAnagram1("ccac", "aacc");
         System.out.println(anagram);
     }
 }
