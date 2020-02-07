@@ -43,5 +43,8 @@ public class LeetCode220 {
         Solution solution = new Solution();
         boolean b = solution.containsNearbyAlmostDuplicate(new int[]{-2147483648, -2147483648}, 3, 3);
         System.out.println(b);
+
+        String s = "fawfaf";
+        System.out.println(s.indexOf('f'));
     }
 }
