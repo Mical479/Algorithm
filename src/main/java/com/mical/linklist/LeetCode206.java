@@ -11,14 +11,6 @@ package com.mical.linklist;
  */
 public class LeetCode206 {
 
-    class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
     class Solution {
         //初始化时，pre指向null，cur指向head，next指向cur.next
         //要反转链表，则要先将 cur 指向pre，在依次将pre和cur和next向后移一个
