@@ -30,7 +30,7 @@ public class LeetCode279 {
             Queue<Node> quque = new LinkedList<>();
             LinkedList<Node> queue = new LinkedList<>();
             queue.add(new Node(n, 1));
-            boolean visited[] = new boolean[n];
+            boolean[] visited = new boolean[n];
             while (!queue.isEmpty()) {
                 Node node = queue.poll();
                 int val = node.val;
