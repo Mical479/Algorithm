@@ -6,11 +6,11 @@ package com.mical.linklist;
  * 创建时间：2020/2/12 14:10
  * 创建人：Mical
  */
-class ListNode {
-    int val;
-    ListNode next;
+public class ListNode {
+    public int val;
+    public ListNode next;
 
-    ListNode(int x) {
+    public ListNode(int x) {
         val = x;
     }
 
