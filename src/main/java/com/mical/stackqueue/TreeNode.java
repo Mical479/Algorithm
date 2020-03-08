@@ -25,6 +25,7 @@ public class TreeNode {
         return createNode(arr, 0);
     }
 
+    //中序遍历的结果创建二叉树。
     private static TreeNode createNode(int[] arr, int index){
         if (index >= arr.length || arr[index] == -1)
             return null;
